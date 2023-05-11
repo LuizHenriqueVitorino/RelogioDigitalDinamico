@@ -16,3 +16,21 @@ const relogio = setInterval(function time() {
     minutos.textContent = min;
     segundos.textContent = s;
 })
+
+// TODO: Separar estas partes futuramente....
+
+const modo = document.getElementById('tema');
+
+modo.addEventListener('click', () => {
+    if(modo.classList.contains('dark')){
+        modo.classList.remove('dark');
+        modo.classList.add('light');
+        modo.textContent = 'CLARO';
+
+        return
+    }
+
+    modo.classList.remove('light');
+    modo.classList.add('dark');
+    modo.textContent = 'ESCURO';
+})

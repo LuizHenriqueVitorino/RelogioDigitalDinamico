@@ -10,6 +10,7 @@ body{
     height: 100vh;
     background: linear-gradient(120deg, #ffe53bd8, #ff2525da);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -46,4 +47,24 @@ body{
 
 .relogio span.tempo {
     font-size: 10px;
+}
+
+.Tema {
+    width: 550px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tema{
+    /* margin-right: 25px; */
+    cursor: pointer;
+}
+
+.light{
+    color: #000000;
+}
+
+.dark{
+    color: #FFFFFF;
 }
