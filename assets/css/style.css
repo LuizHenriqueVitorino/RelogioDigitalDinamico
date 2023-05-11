@@ -8,11 +8,17 @@
 
 body{
     height: 100vh;
-    background: linear-gradient(120deg, #ffe53bd8, #ff2525da);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.light_bk {
+    background: linear-gradient(120deg, #8efff0d8, #419620da);
+}
+.dark_bk{
+    background: linear-gradient(120deg, #4a4a4a, #000000);
 }
 
 .relogio{

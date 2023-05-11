@@ -20,6 +20,7 @@ const relogio = setInterval(function time() {
 // TODO: Separar estas partes futuramente....
 
 const modo = document.getElementById('tema');
+const back = document.getElementById('body');
 
 modo.addEventListener('click', () => {
     if(modo.classList.contains('dark')){
@@ -27,10 +28,18 @@ modo.addEventListener('click', () => {
         modo.classList.add('light');
         modo.textContent = 'CLARO';
 
+        back.classList.remove('dark_bk')
+        back.classList.add('light_bk')
+
         return
     }
 
     modo.classList.remove('light');
     modo.classList.add('dark');
     modo.textContent = 'ESCURO';
+
+    back.classList.remove('light_bk')
+    back.classList.add('dark_bk');
+
+    
 })
